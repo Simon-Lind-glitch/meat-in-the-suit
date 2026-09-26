@@ -267,3 +267,7 @@ figcaption { color: var(--term-green); }
   font: 400 22px/1.35 var(--term);
   color: #cfd4cf;
 }
+
+/* four cards read as a 2x2 rather than a 3 + 1 */
+.features.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 700px) { .features.four { grid-template-columns: 1fr; } }
