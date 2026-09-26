@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meat in the Suit</title>
-<meta name="description" content="A top-down tactical roguelike. One indestructible suit. Disposable pilots.">
+<meta name="description" content="Colony Ship CS-22H is overrun. One suit. A squad of marines. A queue of pilots. The suit always comes back.">
 <meta property="og:title" content="Meat in the Suit">
-<meta property="og:description" content="A top-down tactical roguelike. One indestructible suit. Disposable pilots.">
+<meta property="og:description" content="Colony Ship CS-22H is overrun. One suit. A squad of marines. A queue of pilots. The suit always comes back.">
 <meta property="og:image" content="media/workshop.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +17,18 @@
 <body>
 
 <header class="hero">
-  <img class="hero-art" src="media/hero-ship.jpg" alt="The ship hanging in orbit, built out of boxes">
+  <img class="hero-art" src="media/hero-ship.jpg" alt="Colony Ship CS-22H in orbit">
   <div class="hero-shade"></div>
   <div class="hero-text">
-    <p class="kicker">A top-down tactical roguelike</p>
+    <pre class="term boot" aria-label="Ship log">
+<span>MOTHER // COLONY SHIP CS-22H</span>
+<span>&gt; PILOT 0413 .......... VITALS NIL</span>
+<span>&gt; SUIT ............... INTACT</span>
+<span>&gt; CRANE ARM .......... ENGAGED</span>
+<span>&gt; LOADING PILOT 0414</span>
+<span>&gt; GOOD LUCK, 0414.<i class="cursor"></i></span></pre>
     <h1>Meat in the Suit</h1>
-    <p class="tagline">The suit always comes back.<br>The pilot inside it does not.</p>
+    <p class="tagline">The suit always comes back.</p>
     <nav class="cta">
       <a class="btn" href="#media">Screenshots</a>
       <a class="btn ghost" href="https://github.com/Simon-Lind-glitch/meat-in-the-suit/issues">Report a bug</a>
@@ -32,65 +38,85 @@
 
 <main>
 
-  <section class="pitch panel">
-    <p class="lead">
-      You control one heavy suit and the squad behind it: click to move, attack-move, kite,
-      peek corners, time your abilities.
-      No base, no economy. A corridor, something at the end of it, and the question of
-      whether you can afford to walk in.
-    </p>
-    <p>
-      When the pilot dies, the suit is recovered. A crane lifts it, the hatch opens, and what
-      is left of the pilot falls out onto the deck. A new body is loaded in.
-      <strong>The suit remembers. You don't.</strong>
-    </p>
+  <section class="status panel">
+    <pre class="term">
+<span class="dim">MOTHER // STATUS REPORT</span>
+&gt; CS-22H ............. OVERRUN
+&gt; CREW ............... 0 RESPONDING
+&gt; MARINES IN CRYO .... 214
+&gt; SUIT ............... 1, INTACT
+&gt; PILOTS ON FILE ..... 38
+&gt; <span class="amber">ORDER: REACH THE REACTOR CORE.</span></pre>
+    <div class="status-text">
+      <p class="lead">
+        One heavy suit. It cannot be damaged. The pilot inside it can.
+      </p>
+      <p>
+        Take a squad of thawed marines deck by deck through a ship the swarm has claimed.
+        Hold the doorways. Clear the rooms. When the pilot dies, a crane lifts the suit out,
+        the hatch opens, and Mother loads the next one.
+      </p>
+      <p class="radio">"Moving out." &nbsp;"Contact!" &nbsp;"Hold the line!"</p>
+    </div>
   </section>
 
+  <h2 class="section-title">Mother's log</h2>
   <section class="features">
     <article class="panel">
-      <h2>Positioning is the aggro system</h2>
-      <p>The swarm bites whatever is closest, and every body is solid. A squad in a corridor
-      mouth is a wall. It's also the thing being eaten, so it's a wall on a timer.</p>
+      <p class="tag">&gt; DOCTRINE</p>
+      <h2>Bodies are the wall</h2>
+      <p class="radio">"Front rank, hold!"</p>
+      <p>The swarm bites whatever is closest, and nothing walks through anything. Put your
+      marines in the doorway. Pull the wounded out before the wall breaks.</p>
     </article>
     <article class="panel">
-      <h2>Your army thaws out of cryo</h2>
-      <p>Marines, Torches and Bulwarks come out of cryo bays you earn by clearing rooms. They
-      aren't reinforcements. They're currency with legs.</p>
+      <p class="tag">&gt; CRYO STOCK: 214</p>
+      <h2>The squad thaws out</h2>
+      <p class="radio">"Thawed and ready."</p>
+      <p>Clear a room, open a bay. Marines, Torches and Bulwarks come out of cryo. Mother
+      files them under supplies.</p>
     </article>
     <article class="panel">
-      <h2>Counters, not bigger numbers</h2>
-      <p>Slugs shatter carapace, fire melts the swarm, spines open plate. The suit is built
-      to kill armour and is bad at chaff, so the squad has to handle the swarm.</p>
+      <p class="tag">&gt; ARMAMENT</p>
+      <h2>Right gun, right target</h2>
+      <p class="radio">"Burn it!"</p>
+      <p>Rifles crack carapace. Torches melt the swarm. The suit's gauss rifle opens plate and
+      wastes itself on chaff. Bring the bodies the room needs.</p>
     </article>
     <article class="panel">
-      <h2>A boss at the end of every level</h2>
-      <p>Thornback, Ramhide, Delver, Vaulter and the Broodheart. Every attack is painted on the
-      floor first, so the question is always where your bodies are standing.</p>
+      <p class="tag">&gt; HOSTILES</p>
+      <h2>The swarm</h2>
+      <p class="radio">"They're coming up through the floor!"</p>
+      <p>Skitters. Spinespitters. Bursters that run at your formation. Bilecasters that shell
+      your position. Behemoths: Mother advises you walk away.</p>
     </article>
     <article class="panel">
-      <h2>The ship, and what is under it</h2>
-      <p>Clear the ship level by level down to the reactor core. Blow it, and the next run goes
-      through the hole into the broodship, which is not made of steel.</p>
+      <p class="tag">&gt; PRIORITY TARGETS: 5</p>
+      <h2>Something at the end of every level</h2>
+      <p class="radio">"What the hell is that?"</p>
+      <p>Thornback. Ramhide. Delver. Vaulter. The Broodheart. Every strike is marked on the
+      deck before it lands. Be somewhere else.</p>
     </article>
     <article class="panel">
-      <h2>Buy time, not stats</h2>
-      <p>Kills charge psi. Press Space and the sector slows to a quarter speed while your
-      hands stay at full speed: long enough to pull four marines out of a blast circle.</p>
+      <p class="tag">&gt; ROUTE: CS-22H &gt; CORE &gt; ???</p>
+      <h2>Down through the core</h2>
+      <p class="radio">"Blow it. We go down the hole."</p>
+      <p>Five levels of ship, then the reactor core. Past it is what the core was keeping out:
+      the broodship.</p>
     </article>
     <article class="panel">
-      <h2>The workshop between runs</h2>
-      <p>Fit modules to the suit, earn new guns by losing the troopers that carry them, and
-      pick which pilot goes in next. Each one has a quirk and a cost.</p>
+      <p class="tag">&gt; PSI</p>
+      <h2>Buy a second</h2>
+      <p class="radio">"Everything went slow."</p>
+      <p>Kills charge psi. Space drops the deck to quarter speed while your hands stay at
+      full speed. Long enough to pull four marines out of a blast.</p>
     </article>
     <article class="panel">
-      <h2>Everything is made of boxes</h2>
-      <p>Units, the suit, the aliens, the explosions. A dark, low-fi installation lit room by
-      room, with a dithered picture that looks like 1997 on purpose.</p>
-    </article>
-    <article class="panel">
-      <h2>A bestiary that asks questions</h2>
-      <p>Skitters, spinespitters, bursters that run at your formation, bilecasters that
-      shell your position, and behemoths: the one fight you're allowed to walk away from.</p>
+      <p class="tag">&gt; RECOVERY BAY</p>
+      <h2>Next pilot, please</h2>
+      <p class="radio">"Pilot 0414, select loadout."</p>
+      <p>Fit modules to the suit. Earn guns off the troopers you lose. Pick who goes in next.
+      Every pilot has a quirk. Every pilot has a cost.</p>
     </article>
   </section>
 
@@ -100,7 +126,7 @@
 
     <figure class="panel">
       <img src="media/shot-01.jpg" alt="Describe what is on screen" loading="lazy">
-      <figcaption>Optional caption</figcaption>
+      <figcaption>&gt; Optional caption</figcaption>
     </figure>
 
     For video, either a local file:
@@ -117,26 +143,26 @@
     <div class="gallery">
       <figure class="panel wide">
         <img src="media/main-menu.jpg" alt="The main menu, with the ship in orbit behind it" loading="lazy">
-        <figcaption>The main menu.</figcaption>
+        <figcaption>&gt; CS-22H, HIGH ORBIT</figcaption>
       </figure>
       <figure class="panel">
-        <img src="media/save-slots.jpg" alt="The save slot screen over the workshop" loading="lazy">
-        <figcaption>Three save slots, each with its own kills, biomass and modules.</figcaption>
+        <img src="media/save-slots.jpg" alt="The save slot screen over the recovery bay" loading="lazy">
+        <figcaption>&gt; SERVICE RECORDS</figcaption>
       </figure>
       <figure class="panel">
-        <img src="media/workshop.jpg" alt="The workshop: three pilots waiting in cryo pods while the crane welds the suit on its cradle" loading="lazy">
-        <figcaption>The workshop. Three pilots wait in cryo; the crane works on the suit.</figcaption>
+        <img src="media/workshop.jpg" alt="The recovery bay: three pilots waiting in cryo pods while the crane welds the suit on its cradle" loading="lazy">
+        <figcaption>&gt; RECOVERY BAY. THREE PILOTS ON STANDBY.</figcaption>
       </figure>
       <figure class="panel wide">
         <img src="media/squad.jpg" alt="The suit and eight marines in the first room of the ship" loading="lazy">
-        <figcaption>The suit and its squad, first room of the ship.</figcaption>
+        <figcaption>&gt; DECK 1, ROOM 1. SUIT AND 8 MARINES DEPLOYED.</figcaption>
       </figure>
     </div>
-    <p class="muted">Video coming soon.</p>
+    <p class="muted">&gt; VIDEO FEED PENDING.</p>
   </section>
 
   <section class="feedback panel">
-    <h2 class="section-title">Playtesting?</h2>
+    <h2 class="section-title">Report a malfunction</h2>
     <p>Press <kbd>F8</kbd> in game to file a bug straight to the
     <a href="https://github.com/Simon-Lind-glitch/meat-in-the-suit/issues">issue tracker</a>,
     or use the pause menu to send a suggestion.</p>
@@ -145,7 +171,7 @@
 </main>
 
 <footer>
-  <p>Meat in the Suit &middot; in development</p>
+  <p>Meat in the Suit &middot; in development &middot; Mother is listening</p>
 </footer>
 
 </body>
