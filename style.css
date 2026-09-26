@@ -259,3 +259,11 @@ figcaption { color: var(--term-green); }
   text-shadow: 3px 3px 0 #000;
 }
 .hero h1 { margin-bottom: 28px; }
+
+/* the one plain line about what you actually do */
+.plain {
+  max-width: 760px;
+  margin: 8px 0 56px;
+  font: 400 22px/1.35 var(--term);
+  color: #cfd4cf;
+}
