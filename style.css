@@ -30,7 +30,12 @@ body::after {
   position: fixed; inset: 0;
   pointer-events: none;
   background: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 1px, transparent 1px 3px);
-  mix-blend-mode: multiply;
+  /* No blend mode: black at 18% looks the same blended normally as multiplied, and a
+     multiplied full-screen fixed layer re-blends the whole window on every scroll frame
+     (worse with videos under it). Its own layer, so scrolling only moves the page. */
+  transform: translateZ(0);
+  will-change: transform;
+  z-index: 10;
 }
 a { color: var(--amber); }
 img, video { max-width: 100%; display: block; }
